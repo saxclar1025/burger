@@ -1,0 +1,33 @@
+<h1>Eat Da Burger</h1>
+
+<img src="https://gallery.yopriceville.com/var/resizes/Free-Clipart-Pictures/Fast-Food-PNG-Clipart/Hamburger_PNG_Vector_Clipart_Picture.png?m=1507172108">
+
+<div id="available-div">
+  <h3>Available Burgers</h3>
+  <ul>
+    {{#each burgers}}
+      {{#unless devoured}}
+        <li>{{burger_name}} <button burgerId="{{id}}">Devour</button></li>
+      {{/unless}}
+    {{/each}}
+  </ul>
+</div>
+
+<div id="eaten-div">
+  <h3>Devoured Burgers</h3>
+  <ul>
+    {{#each burgers}}
+      {{#if devoured}}
+        <li>{{burger_name}}</li>
+      {{/if}}
+    {{/each}}
+  </ul>
+</div>
+
+<div id="create-div">
+  <h3>Order a new burger</h3>
+  <form id="create-burger-form">
+    <input type="text" name="burger-name" placeholder="cheeseburger">
+    <input type="submit" name="create-burger-submit">
+  </form>
+</div>
