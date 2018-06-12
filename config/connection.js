@@ -3,10 +3,10 @@ var mysql = require("mysql");
 var source = {
   localhost: {
     port: 3306,
-    host: "localhost",
-    user: "root",
-    password: "root",
-    database: "burgers_db"
+    host: "qzkp8ry756433yd4.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+    user: "p7eala3a5gfse51n",
+    password: "qcxhbbruaxlid82g",
+    database: "q8lijfr0ttazw2ew"
   }
 };
 
