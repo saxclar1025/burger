@@ -1,0 +1,14 @@
+body {
+  background-image: url("./../img/burger-background.jpg");
+  background-repeat: repeat;
+  font-family: Georgia, serif;
+}
+
+h1 {
+  color: red;
+}
+
+#hamburger-main-pic {
+  width: 50%;
+  height: auto;
+}
